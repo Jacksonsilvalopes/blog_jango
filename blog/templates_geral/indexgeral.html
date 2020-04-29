@@ -1,0 +1,17 @@
+<h1>index geral</h1>
+
+
+<p>{{ name }}</p>
+
+<h1>Item de aprendizado</h1>
+
+
+{% for item in lista_tecnologia %}
+
+    {% if item == 'Git' %}
+    <p style="color: red"><b>- {{ item }}</b> </p> 
+    {% else %}
+   <p> - {{ item }}</p>  
+    {% endif %}
+{% endfor %}
+
